@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #764ba2);
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        .container {
+            margin-top: 50px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .text-muted {
+            font-size: 1.2rem;
+            color: #999;
+        }
+
+        .btn-custom {
+            background-color: #667eea;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #5548c8;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-card, .skill-card, .experience-card, .education-card {
+            background: rgba(245, 246, 250, 0.9);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .info-card:hover, .skill-card:hover, .experience-card:hover, .education-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .info-card ul, .skill-card ul, .experience-card ul, .education-card ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .info-card li, .skill-card li, .experience-card li, .education-card li {
+            margin-bottom: 15px;
+        }
+
+        .info-card li i, .skill-card li i {
+            color: #667eea;
+            margin-right: 10px;
+        }
+
+        .experience-item, .education-item {
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .experience-item::before, .education-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 8px;
+            height: 8px;
+            background-color: #667eea;
+            border-radius: 50%;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #667eea;
+            color: #fff;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profil Utama -->
+        <div class="text-center">
+            <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-img">
+            <h1>Rizky Zanuar Maulana Haj</h1>
+            <p class="text-muted">WEB DEVELOPER</p>
+            <a href="#" class="btn btn-custom">Download CV</a>
+        </div>
+
+        <!-- Informasi Pribadi -->
+        <div class="section-title">Informasi Pribadi</div>
+        <div class="info-card">
+            <ul>
+                <li><i class="fas fa-user"></i>Umur: 25 Tahun</li>
+                <li><i class="fas fa-envelope"></i>Email: rzkyzanuarr@example.com</li>
+                <li><i class="fas fa-phone"></i>Telepon: +62 123 456 7890</li>
+                <li><i class="fas fa-map-marker-alt"></i>Alamat: Jl. Mawar No. 123, Jakarta</li>
+            </ul>
+        </div>
+
+        <!-- Tentang Saya -->
+        <div class="section-title">Tentang Saya</div>
+        <div class="info-card">
+            <p>Saya adalah seorang profesional di bidang teknologi dengan pengalaman lebih dari 5 tahun dalam pengembangan web dan aplikasi. Fokus utama saya adalah menciptakan solusi inovatif yang ramah pengguna dan berkinerja tinggi.</p>
+        </div>
+
+        <!-- Keterampilan -->
+        <div class="section-title">Keterampilan</div>
+        <div class="skill-card">
+            <ul>
+                <li><i class="fas fa-code"></i>HTML, CSS, JavaScript</li>
+                <li><i class="fas fa-laptop-code"></i>React, Node.js</li>
+                <li><i class="fas fa-database"></i>Python, Django</li>
+                <li><i class="fas fa-pencil-ruler"></i>UI/UX Design</li>
+            </ul>
+        </div>
+
+        <!-- Pengalaman Kerja -->
+        <div class="section-title">Pengalaman Kerja</div>
+        <div class="experience-card">
+            <div class="experience-item">
+                <strong>Software Engineer</strong> - Perusahaan ABC (2022 - Sekarang)
+                <p>Merancang dan mengembangkan aplikasi web menggunakan React dan Node.js. Berkolaborasi dengan tim desain untuk menciptakan antarmuka pengguna yang intuitif dan responsif.</p>
+            </div>
+            <div class="experience-item">
+                <strong>Web Developer</strong> - Perusahaan XYZ (2020 - 2022)
+                <p>Mengembangkan dan memelihara situs web dengan fokus pada optimasi performa, keamanan, dan SEO.</p>
+            </div>
+        </div>
+
+        <!-- Pendidikan -->
+        <div class="section-title">Pendidikan</div>
+        <div class="education-card">
+            <div class="education-item">
+                <strong>Sarjana Teknologi Informasi</strong> - Universitas Brawijaya (2016 - 2020)
+                <p>Mempelajari pengembangan perangkat lunak, struktur data, dan kecerdasan buatan dengan proyek akhir terkait pengembangan aplikasi berbasis AI.</p>
+            </div>
+            <div class="education-item">
+                <strong>SMK RPL</strong> - Sekolah Menengah Kejuruan (2013 - 2016)
+                <p>Belajar dasar-dasar pengembangan perangkat lunak, basis data, dan jaringan komputer.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Rizky Zanuar Maulana Haj. Semua Hak Dilindungi.</p>
+        </footer>
+    </div>
+
+    <!-- FontAwesome untuk ikon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
